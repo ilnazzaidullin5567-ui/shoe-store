@@ -1,0 +1,162 @@
+<mxfile host="Electron" agent="ChatGPT" pages="2">
+  <diagram id="A0" name="A-0 Контекст">
+    <mxGraphModel dx="2020" dy="1213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;" value="IDEF0 — КОНТЕКСТНАЯ ДИАГРАММА A-0" vertex="1">
+          <mxGeometry height="55" width="1000" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="func" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#34495e;strokeWidth=2;fontSize=24;fontStyle=1;" value="Магазин обуви&lt;br&gt;&lt;br&gt;A-0" vertex="1">
+          <mxGeometry height="280" width="500" x="650" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="in" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=17;" value="Учётные данные&lt;br&gt;Товары из БД&lt;br&gt;Событие «оформить заказ»">
+          <mxGeometry as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="90" y="520" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=17;" value="Список товаров&lt;br&gt;Оформленный заказ&lt;br&gt;Аналитика">
+          <mxGeometry as="geometry">
+            <mxPoint x="1160" y="520" as="sourcePoint" />
+            <mxPoint x="1710" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=17;" value="Роли&lt;br&gt;Чек-лист демо-экзамена">
+          <mxGeometry as="geometry">
+            <mxPoint x="900" y="150" as="sourcePoint" />
+            <mxPoint x="900" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=17;" value="WPF (C#)&lt;br&gt;MySQL&lt;br&gt;EF Core">
+          <mxGeometry as="geometry">
+            <mxPoint x="900" y="930" as="sourcePoint" />
+            <mxPoint x="900" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inlabel" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="ВХОД" vertex="1">
+          <mxGeometry height="40" width="200" x="250" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="outlabel" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="ВЫХОД" vertex="1">
+          <mxGeometry height="40" width="200" x="1350" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="ctrllabel" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="УПРАВЛЕНИЕ" vertex="1">
+          <mxGeometry height="40" width="200" x="800" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mechlabel" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="МЕХАНИЗМ" vertex="1">
+          <mxGeometry height="40" width="200" x="800" y="970" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="A1" name="A-1 Декомпозиция">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title2" value="IDEF0 — ДЕКОМПОЗИЦИЯ НА МОДУЛИ A-1" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry as="geometry" x="350" y="20" width="1500" height="55" />
+        </mxCell>
+        <mxCell id="auth" value="1. АВТОРИЗАЦИЯ&lt;br&gt;&lt;br&gt;Вход: логин, пароль&lt;br&gt;Выход: сеанс, роль" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#34495e;strokeWidth=2;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry as="geometry" x="120" y="260" width="400" height="220" />
+        </mxCell>
+        <mxCell id="catalog" value="2. КАТАЛОГ&lt;br&gt;&lt;br&gt;Вход: сеанс, роль&lt;br&gt;Выход: список товаров" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#34495e;strokeWidth=2;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry as="geometry" x="620" y="420" width="400" height="220" />
+        </mxCell>
+        <mxCell id="search" value="3. ПОИСК / ФИЛЬТР / СОРТИРОВКА&lt;br&gt;&lt;br&gt;Вход: список товаров, запрос, фильтры&lt;br&gt;Выход: результаты поиска" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#34495e;strokeWidth=2;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry as="geometry" x="1120" y="580" width="440" height="240" />
+        </mxCell>
+        <mxCell id="crud" value="4. CRUD ТОВАРОВ&lt;br&gt;&lt;br&gt;Вход: выбранный товар, команда CRUD&lt;br&gt;Выход: результат операции" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#34495e;strokeWidth=2;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry as="geometry" x="1650" y="740" width="440" height="240" />
+        </mxCell>
+        <mxCell id="a12" value="Сеанс&lt;br&gt;и роль" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="520" y="370" as="sourcePoint" />
+            <mxPoint x="610" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="565" y="370" />
+              <mxPoint x="565" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a23" value="Список товаров" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1020" y="530" as="sourcePoint" />
+            <mxPoint x="1110" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="530" />
+              <mxPoint x="1070" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a34" value="Отобранные товары" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1560" y="700" as="sourcePoint" />
+            <mxPoint x="1640" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1600" y="700" />
+              <mxPoint x="1600" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c0" value="Роли и правила доступа" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="320" y="110" as="sourcePoint" />
+            <mxPoint x="320" y="250" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1" value="Правила каталога" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="820" y="110" as="sourcePoint" />
+            <mxPoint x="820" y="410" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c2" value="Критерии поиска" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1340" y="110" as="sourcePoint" />
+            <mxPoint x="1340" y="570" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c3" value="Права администратора" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1870" y="110" as="sourcePoint" />
+            <mxPoint x="1870" y="730" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0" value="WPF • C#" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="320" y="1160" as="sourcePoint" />
+            <mxPoint x="320" y="490" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1" value="EF Core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="820" y="1160" as="sourcePoint" />
+            <mxPoint x="820" y="650" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="MySQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1340" y="1160" as="sourcePoint" />
+            <mxPoint x="1340" y="810" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="EF Core • MySQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=16;" parent="1" edge="1">
+          <mxGeometry as="geometry" x="0" y="0" width="0" height="0">
+            <mxPoint x="1870" y="1160" as="sourcePoint" />
+            <mxPoint x="1870" y="970" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
